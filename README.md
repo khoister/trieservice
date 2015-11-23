@@ -3,7 +3,7 @@
 ## Build & Run ##
 
 ```sh
-$ cd Similar_Words_App
+$ cd trieservice
 $ ./sbt
 > container:start
 > browse
