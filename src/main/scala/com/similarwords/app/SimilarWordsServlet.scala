@@ -36,6 +36,6 @@ class SimilarWordsServlet extends SimilarWordsAppStack with JacksonJsonSupport w
     get("/similar/:prefix") {
         contentType = formats("json")
         // Get words with same prefix
-        trie.similar({params("prefix")})
+        trie.similar({params("prefix")}.toLowerCase())
     }
 }
